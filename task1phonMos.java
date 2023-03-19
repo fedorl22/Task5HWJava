@@ -62,7 +62,7 @@ public static void main(String[] args) {
         addNumber("Kent", (Long) 89257772255L, bookPhone);
         addNumber("Google", (Long) 89251117733L, bookPhone);
         addNumber("Иванов", (Long) 89253222200L, bookPhone);
-        try (Scanner input = new Scanner(System.in)) {
+        try (Scanner input = new Scanner(System.in,"cp866")) {
             while (true) {
 // Открываем цикл ввода данных.
                 System.out.printf(
@@ -78,7 +78,7 @@ public static void main(String[] args) {
                     printPhoneBook(bookPhone);
                 }
                 if (a == 1) {
-
+                    
                     System.out.printf("Введите фамилию: ");
                     String name = input.next();
                     System.out.printf("Введите номер телефона: ");
